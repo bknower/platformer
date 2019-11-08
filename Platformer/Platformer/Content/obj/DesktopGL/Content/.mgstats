@@ -1,0 +1,4 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"D:/Monogame/Platformer/Platformer/Content/background.png","D:/Monogame/Platformer/Platformer/Content/bin/DesktopGL/Content/background.xnb","TextureProcessor","Texture2DContent",2246,1571765,0.4093729
+"D:/Monogame/Platformer/Platformer/Content/block.png","D:/Monogame/Platformer/Platformer/Content/bin/DesktopGL/Content/block.xnb","TextureProcessor","Texture2DContent",546,65621,0.0120101
+"D:/Monogame/Platformer/Platformer/Content/player.png","D:/Monogame/Platformer/Platformer/Content/bin/DesktopGL/Content/player.xnb","TextureProcessor","Texture2DContent",282,16469,0.0080079

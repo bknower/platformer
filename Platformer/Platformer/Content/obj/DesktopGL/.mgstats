@@ -1,0 +1,4 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"D:/Monogame/Game1/Game1/Content/background.png","D:/Monogame/Game1/Game1/Content/bin/DesktopGL/background.xnb","TextureProcessor","Texture2DContent",2246,1571765,0.1241129
+"D:/Monogame/Game1/Game1/Content/block.png","D:/Monogame/Game1/Game1/Content/bin/DesktopGL/block.xnb","TextureProcessor","Texture2DContent",546,65621,0.09909
+"D:/Monogame/Game1/Game1/Content/player.png","D:/Monogame/Game1/Game1/Content/bin/DesktopGL/player.xnb","TextureProcessor","Texture2DContent",282,16469,0.0910836
