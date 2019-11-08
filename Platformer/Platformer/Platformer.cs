@@ -11,13 +11,15 @@ namespace Platformer
         SpriteBatch spriteBatch;
         InputHelper input;
         Texture2D pixel;
+
         
         public ArrayList staticObjects = new ArrayList();
         public ArrayList dynamicObjects = new ArrayList();
         public ArrayList hitboxes = new ArrayList();
-        public float speed;
+
         StaticObject background;
         StaticObject block;
+        StaticObject floor;
         Player player;
 
         public Platformer()
@@ -28,7 +30,6 @@ namespace Platformer
         protected override void Initialize()
         {
             base.Initialize();
-            speed = 5;
             pixel = new Texture2D(GraphicsDevice, 1, 1);
             pixel.SetData(new[] { Color.White });
         }
@@ -63,6 +64,12 @@ namespace Platformer
                     new Vector2(graphics.PreferredBackBufferWidth / 2, graphics.PreferredBackBufferHeight - blocktex.Height),
                     true);
             staticObjects.Add(block);
+            floor =
+                new StaticObject(
+                    Content.Load<Texture2D>(@"floor"),
+                    new Vector2(0, graphics.PreferredBackBufferHeight - blocktex.Height),
+                    true);
+            staticObjects.Add(floor);
         }
 
         void ShowHitboxes(int width)
@@ -103,15 +110,7 @@ namespace Platformer
             if (input.currentKeyboardState.IsKeyDown(Keys.Escape)) { Exit(); }
             base.Update(gameTime);
 
-            KeyboardState k = input.currentKeyboardState;
-            if (k.IsKeyDown(Keys.Right))
-                player.Move(new Vector2(speed, 0), staticObjects);
-            if (k.IsKeyDown(Keys.Left))
-                player.Move(new Vector2(-speed, 0), staticObjects);
-            if (k.IsKeyDown(Keys.Up))
-                player.Move(new Vector2(0, -speed), staticObjects);
-            if (k.IsKeyDown(Keys.Down))
-                player.Move(new Vector2(0, speed), staticObjects);
+            player.Update(staticObjects, input, gameTime);
         }
 
         protected override void Draw(GameTime gameTime)

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/benkn/Documents/GitHub/platformer/Platformer/Platformer/Content/block.png</SourceFile>
-  <SourceTime>2019-11-08T13:54:06.1637106-05:00</SourceTime>
-  <DestFile>C:/Users/benkn/Documents/GitHub/platformer/Platformer/Platformer/Content/bin/DesktopGL/Content/block.xnb</DestFile>
-  <DestTime>2019-11-08T15:01:20.0792741-05:00</DestTime>
+  <SourceFile>C:/Users/benkn/Documents/GitHub/platformer/Platformer/Platformer/Content/floor.png</SourceFile>
+  <SourceTime>2019-11-08T15:36:10.5675525-05:00</SourceTime>
+  <DestFile>C:/Users/benkn/Documents/GitHub/platformer/Platformer/Platformer/Content/bin/DesktopGL/Content/floor.xnb</DestFile>
+  <DestTime>2019-11-08T15:36:39.2535243-05:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2019-10-15T15:28:30-04:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
   <ProcessorTime>2019-10-15T15:28:30-04:00</ProcessorTime>
   <Parameters>
     <Key>ColorKeyColor</Key>
-    <Value>255,0,255,255</Value>
+    <Value>0,0,0,0</Value>
   </Parameters>
   <Parameters>
     <Key>ColorKeyEnabled</Key>

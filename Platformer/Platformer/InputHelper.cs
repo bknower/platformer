@@ -101,6 +101,21 @@ namespace Platformer
             else { return false; }
         }
 
+        public Vector2 GetDirection()
+        {
+            Vector2 d = Vector2.Zero;
+            if (currentKeyboardState.IsKeyDown(Keys.Right))
+                d += new Vector2(1, 0);
+            if (currentKeyboardState.IsKeyDown(Keys.Left))
+                d += new Vector2(-1, 0);
+            if (currentKeyboardState.IsKeyDown(Keys.Up))
+                d += new Vector2(0, -1);
+            if (currentKeyboardState.IsKeyDown(Keys.Down))
+                d += new Vector2(0, 1);
+            d.Normalize();
+            return d;
+        }
+
         //check for gamepad button presses and releases
         public bool IsNewButtonPress(Buttons button)
         { return (currentGamePadState.IsButtonDown(button) && lastGamePadState.IsButtonUp(button)); }

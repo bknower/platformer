@@ -14,6 +14,7 @@ namespace Platformer
         public Texture2D texture;
         public Vector2 position;
         public bool solid;
+        public float scale;
         public Texture2D Texture { get => texture; set => texture = value; }
         public Vector2 Position { get => position; set => position = value; }
 
@@ -22,6 +23,7 @@ namespace Platformer
             this.Texture = texture;
             this.Position = position;
             this.solid = solid;
+            this.scale = 1f;
         }
 
         public Rectangle BoundingBox
@@ -41,23 +43,6 @@ namespace Platformer
         public virtual void Move(Vector2 v, ArrayList objects)
         {
             this.Position += v;
-        }
-        public void MoveOutOf(Vector2 v, GameObject g)
-        {
-            if (v.X > 0)
-            {
-                position.X = g.position.X - BoundingBox.Width;
-            } else if (v.X < 0)
-            {
-                position.X = g.position.X + g.BoundingBox.Width;
-            }
-            if (v.Y > 0)
-            {
-                position.Y = g.position.Y - BoundingBox.Height;
-            } else if (v.Y < 0)
-            {
-                position.Y = g.position.Y + g.BoundingBox.Height;
-            }
         }
     }
 }

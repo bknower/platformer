@@ -4,11 +4,13 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>D:/Monogame/Platformer/Platformer/Content/background.png</File>
-    <File>D:/Monogame/Platformer/Platformer/Content/block.png</File>
-    <File>D:/Monogame/Platformer/Platformer/Content/player.png</File>
+    <File>C:/Users/benkn/Documents/GitHub/platformer/Platformer/Platformer/Content/background.png</File>
+    <File>C:/Users/benkn/Documents/GitHub/platformer/Platformer/Platformer/Content/block.png</File>
+    <File>C:/Users/benkn/Documents/GitHub/platformer/Platformer/Platformer/Content/floor.png</File>
+    <File>C:/Users/benkn/Documents/GitHub/platformer/Platformer/Platformer/Content/player.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
