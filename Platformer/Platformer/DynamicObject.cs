@@ -10,7 +10,7 @@ namespace Platformer
 {
     class DynamicObject : GameObject
     {
-        Vector2 velocity;
+        public Vector2 velocity;
 
         public DynamicObject(Texture2D texture, Vector2 position, bool corporeal) : base(texture, position, corporeal) { }
 
