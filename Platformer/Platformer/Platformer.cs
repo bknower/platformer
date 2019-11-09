@@ -63,7 +63,7 @@ namespace Platformer
                     blocktex,
                     new Vector2(graphics.PreferredBackBufferWidth / 2, graphics.PreferredBackBufferHeight - blocktex.Height),
                     true);
-            staticObjects.Add(block);
+            //staticObjects.Add(block);
             floor =
                 new StaticObject(
                     Content.Load<Texture2D>(@"floor"),
@@ -107,7 +107,7 @@ namespace Platformer
         protected override void Update(GameTime gameTime)
         {
             input.Update();
-            if (input.currentKeyboardState.IsKeyDown(Keys.Escape)) { Exit(); }
+            if (input.currentKeyboardState.IsKeyDown(Keys.Escape) || player.Exit) { Exit(); }
             base.Update(gameTime);
 
             player.Update(staticObjects, input, gameTime);
